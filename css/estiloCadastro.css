@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  
+  font-family: Arial, sans-serif;
+  background-color: #0a0e23;
+  min-height: 100vh;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+
+.containerPrincipal{
+  width: 600px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+fieldset{
+    border: 3px solid dodgerblue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+legend{
+  font-size: 19px;
+  border: 1px solid rgb(68, 200, 233);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(52, 72, 185);
+  border-radius: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+label {
+  font-size: 18px;
+  color: #4895ef;
+}
+
+.informacoes-pessoais input {
+  outline: none;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: whitesmoke;
+}
+.informacoes-pessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caixa{
+    background: whitesmoke;
+    outline: none;
+}
+
+.informacoes-pessoais {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.botoes, .voltar {
+margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: whitesmoke;
+  padding: 5px 0;
+}
+.botoes button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgba(96, 78, 199, 0.8), rgba(129, 179, 255, 0.87));
+  cursor: pointer;
+}

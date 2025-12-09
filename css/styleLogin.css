@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+      font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/foto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container {
+    border: 2px solid #fff;
+    width: 420px;
+    min-height: 50vh;
+    height: auto;
+    padding: 30px 40px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    
+}
+
+.container h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ .msg-erro {
+            color: #ff4d4d;
+            background: rgba(255, 77, 77, 0.1);
+            border: 1px solid #ff4d4d;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .msg-sucesso {
+            color: #83ffa2;
+            font-weight: 600;
+            background: rgba(40, 167, 69, 0.1);
+            border: 1px solid #00ff3c;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 15px;
+        }
+.input {
+    margin-right: 20px;
+}
+
+.input input {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+}
+
+.input input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+.input input::placeholder {
+    color: #ffffff;
+}
+
+.input-com-icon {
+    position: relative;
+}
+
+.input-com-icon i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    opacity: 0.8;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px 0 15px 0;
+    gap: 8px;
+}
+
+.checkbox a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    height: 45px;
+    width: 100%;
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+}
+
+.registrar {
+    margin: 20px 0 15px 0;
+    text-align: center;
+}
+
+.registrar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.registrar a:hover {
+    text-decoration: underline;
+}
+
+.redes-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.redes-login button {
+    border-radius: 50%;
+    margin-right: 12px;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.linha::before,
+.linha::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.redes-sociais button:hover {
+    transform: translateY(-5px);
+}
+
+.redes-login .google {
+    background-color: #db4437;
+}
+
+.redes-login .facebook {
+    background-color: #3b5998;
+}
+
+.redes-login .x {
+    background-color: #333;
+}
